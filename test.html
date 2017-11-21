@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <meta name="keywords" content="portfolio, profile">
+    <meta name="description" content="There the preview page of profile">
+    <style>
+        .columns {
+            display: table;
+            width: 10px;
+            background-color: red;
+        }
+
+        .columns > div {
+            display: table-cell;
+        }
+        .columns{
+            width: 20px;
+            height: 20px;
+        }
+
+
+        .columns{
+            display: none !important;
+        }
+
+
+        input:checked + .columns {
+            display: table !important;
+            transition: visibility 2s;
+        }
+    </style>
+</head>
+<body>
+<div class="header"></div>
+<input type="checkbox">
+<div class="columns">
+    <div class="left">ierugioj sdrio gjgiodrjio</div>
+    <div class="center">e'sksejfksef keskf oseo seujse ujese jse sejkh </div>
+    <div class="right">fheuihf ujsej jeh jewsh hse se isej ij iseji fjeisjiojei jjseji js</div>
+</div>
+
+<div class="footer"></div>
+</body>
+</html>

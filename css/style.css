@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'open_sansregular';
+    src: url(../fonts/opensans-regular-webfont.ttf);
+}
+
+body {
+    font: 14px/1.3em 'open_sansregular', 'Arial', 'Tahoma', sans-serif;
+    color: #000;
+}
