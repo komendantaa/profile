@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="author" content="Alex Komandante">
+    <meta name="description" content="Some text">
+    <title>test form</title>
+</head>
+<body>
+    <header role="banner">
+        <h1>"Pizza House"</h1>
+    </header>
+    <main role="main">
+        <form action="" method="get" name="order" role="form">
+            <label for="pizza-name"> Name of pizza* :</label>
+                <input type="text" name="pizza-name"  list="pizzas" id="pizza-name" required placeholder="pepperoni">
+                <datalist id="pizzas">
+                    <option value="Margherita">
+                    <option value="Marinara">
+                    <option value="Napoletana">
+                    <option value="Emiliana">
+                    <option value="Fattoria">
+                </datalist>
+
+            <label for="pizza-size"> Size* :</label>
+                <select name="pizza-size" id="pizza-size">
+                    <option value="20">20"</option>
+                    <option value="40">40"</option>
+                    <option value="50">50"</option>
+                    <option value="80" disabled>80"</option>
+                </select>
+
+            <label> Count of pizzas: <input type="number" name="count" min="1" max="100" value="1"></label>
+
+            <fieldset>
+                <legend>Choose ingradients</legend>
+                <ul>
+                    <li>
+                        <label for="tomatos"><input type="checkbox" id="tomatos" name="ingradients" value="tomatos" checked>tomatos</label>
+                    </li>
+                    <li>
+                        <label for="cheese"><input type="checkbox" id="cheese" name="ingradients" value="cheese" checked>cheese</label>
+                    </li>
+                    <li>
+                        <label for="pepper"><input type="checkbox" id="pepper" name="ingradients" value="pepper">pepper</label>
+                    </li>
+                    <li>
+                        <label for="olives"><input type="checkbox" id="olives" name="ingradients" value="olives">olives</label>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>Please, fill your contacts:</legend>
+            <label> Your address*: <input type="text" name="address" required placeholder="Pushkinskaya str., 14"> </label>
+            <label> Your phone number: <input type="tel" name="phone" placeholder="0999999999" pattern="/(0)\d{9}/" minlength="10" maxlength="10"> </label>
+            </fieldset>
+
+            <button type="reset" name="reset">reset all</button>
+            <button type="submit" name="approve">agree</button>
+        </form>
+    </main>
+</body>
+</html>
